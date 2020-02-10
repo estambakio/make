@@ -8,7 +8,5 @@ RUN apk update \
   && rm make-4.2.1.tar.gz \
   && apk del build-base
 
-RUN which make
-
-RUN make --version
+CMD ["make"]
 
